@@ -1,4 +1,4 @@
-The IPython notebook, PyClimate.ipynb, requires the following Python scripts with it in the same folder:
+The IPython notebook, PyClimate.ipynb, and a Flask API file, ClimateApp.py, require the following Python scripts with them in the same folder:
 
 PyConstants.py
 
