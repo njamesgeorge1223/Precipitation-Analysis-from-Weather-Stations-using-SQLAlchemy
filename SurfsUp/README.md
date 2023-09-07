@@ -3,6 +3,6 @@
 
 ----
 
-# Climate Analysis Using SQLite, SQLAlchemy, and Flask
+# Honolulu Hawaii Climate Analysis
 
 In this project I analyze precipitation data collected by weather stations in Honolulu, Hawaii.  To accomplish this task, I use SQLAlchemy ORM queries, Pandas, and Matplotlib in the IPython notebook, ClimatePy.ipynb.  From these queries, I created an API in Python using Flask for later development.
