@@ -3,7 +3,7 @@
 
 ----
 
-# Honolulu Hawaii Climate Analysis - Surfs Up!
+# Climate Analysis in Honolulu, Hawaii - Surfs Up!
 
 In this project I analyze precipitation data collected by weather stations in Honolulu, Hawaii using SQLAlchemy Object Relational Model (ORM) queries, Pandas, and Matplotlib in the IPython notebook, ClimatePy.ipynb.  From these queries, I also create a RESTful Web API using Flask and Python, ClimateApp.py, for later development.
 
