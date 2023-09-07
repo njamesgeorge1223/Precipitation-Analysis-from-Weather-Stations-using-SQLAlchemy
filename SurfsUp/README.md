@@ -1,8 +1,8 @@
 
+![maui_gettyimages-181172047-1505129277-WPZh_w7bkvd](https://github.com/njgeorge000158/sqlalchemy-challenge/assets/137228821/bc343ff2-cbda-4439-9a39-e539ff67c460)
 
+----
 
 # Climate Analysis Using SQLite, SQLAlchemy, and Flask
 
-In this project I am analyzing two datasets which relate to weather station information over the course of one year in Hawaii in 2016-2017. This information was analyzed using SQLAlchemy ORM queries, and Pandas and Matplotlib in Python. A Flask API is created to store all the information.
-
-##organization In this repository you will find a Resources folder which holds the sqlite file as well as the 2 csv's that are used in this analysis. You will also find climate_starter.ipynb which is the Jupyter notebook file that contains my innitial analysis. There python file for my app named app.py, and the png visualization that I created to map precipitation.
+In this project I analyze precipitation data collected by weather stations in Honolulu, Hawaii.  To accomplish this task, I use SQLAlchemy ORM queries, Pandas, and Matplotlib in the IPython notebook, ClimatePy.ipynb.  From these queries, I created an API in Python using Flask for later development.
