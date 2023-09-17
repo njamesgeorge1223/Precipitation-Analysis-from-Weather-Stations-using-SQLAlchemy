@@ -9,7 +9,7 @@
  #  File Name:  ClimateApp.py
  #
  #  File Description:
- #      This Python script, ClimatePy.ipynb, is a Flask API based on the queries 
+ #      This Python script, ClimatePy.py, is a Flask API based on the queries 
  #      in ClimatePy.ipynb.  Here is a list of the functions for each route:
  #
  #      all_available_routes
@@ -66,7 +66,8 @@ engineSQLAlchemyEngineObject \
         (CONSTANT_SQL_LITE_DATABASE_FILE)
 
 
-# This line of code reflects an existing database schema into a new model.
+# This line of code sets up an existing database schema for reflection 
+# into a new model.
 baseSQLAlchemyDeclarativeMetaObject \
     = automap_base()
 
@@ -79,16 +80,17 @@ baseSQLAlchemyDeclarativeMetaObject \
              = True)
 
 
-# These lines of code save the references to the tables in the sqlite file .
+# These lines of code save the references to the station and measurement 
+# tables.
 stationSQLAlchemyDeclarativeMetaObject \
     = baseSQLAlchemyDeclarativeMetaObject \
         .classes \
-        .station
+            .station
 
 measurementDeclarativeMetaObject \
     = baseSQLAlchemyDeclarativeMetaObject \
         .classes \
-        .measurement
+            .measurement
 
 
 # Each function correctly creates and binds the session 
@@ -270,20 +272,20 @@ def ReturnDateOneYearPriorAsString():
 def all_available_routes():
     
     messageStringVariable \
-        = f'WELCOME TO THE CLIMATE API!\n' \
-        + f'Here is a list of the available routes:\n\n' \
-        + f'* Precipitation:\n' \
-        + f'  /api/v1.0/precipitation\n\n' \
-        + f'* List of Stations:\n' \
-        + f'  /api/v1.0/stations\n\n' \
-        + f'* List of temperature observations for the previous year:\n' \
-        + f'  /api/v1.0/tobs\n\n' \
-        + f'* To calculate the minimum, average, and maximum temperatures\n' \
-        + f'  for a specific start date:\n' \
-        + f'  /api/v1.0/[start_date format:yyyy-mm-dd]\n\n' \
-        + f'* To calculate the minimum, average, and maximum temperatures\n' \
-        + f'  for a specific range of dates:\n' \
-        + f'  /api/v1.0/[start_date format:yyyy-mm-dd]/[end_date format:yyyy-mm-dd]\n\n'
+        = 'WELCOME TO THE CLIMATE API!\n' \
+        + 'Here is a list of the available routes:\n\n' \
+        + '* Precipitation:\n' \
+        + '  /api/v1.0/precipitation\n\n' \
+        + '* List of Stations:\n' \
+        + '  /api/v1.0/stations\n\n' \
+        + '* List of temperature observations for the previous year:\n' \
+        + '  /api/v1.0/tobs\n\n' \
+        + '* To calculate the minimum, average, and maximum temperatures\n' \
+        + '  for a specific start date:\n' \
+        + '  /api/v1.0/[start_date format:yyyy-mm-dd]\n\n' \
+        + '* To calculate the minimum, average, and maximum temperatures\n' \
+        + '  for a specific range of dates:\n' \
+        + '  /api/v1.0/[start_date format:yyyy-mm-dd]/[end_date format:yyyy-mm-dd]\n\n'
     
     return \
         messageStringVariable
@@ -299,8 +301,8 @@ def all_available_routes():
  #  Flask API Route Description:
  #      This function is a Flask API route that occurs when the user arrives 
  #      at the precipitaton URL, '/api/v1.0/precipitation'; the route converts 
- #      the query results fromthe precipitation analysis (id est, retrieve only 
- #      the last 12 months of data) to a dictionary and return the JSON 
+ #      the query results from the precipitation analysis (id est, retrieve only 
+ #      the last 12 months of data) to a Dictionary and returns the JSON 
  #      representation to the caller.
  #
  #  Function Parameters:
@@ -337,14 +339,15 @@ def precipitation():
                  measurementDeclarativeMetaObject \
                     .prcp) \
                     .filter \
-                        (measurementDeclarativeMetaObject.date >= ReturnDateOneYearPriorAsString()) \
+                        (measurementDeclarativeMetaObject.date \
+                             >= ReturnDateOneYearPriorAsString()) \
                 .all()
     
     sessionSQLAlchemySessionObject \
         .close()
 
 
-    # This line of code creates a dictionary from the data and appends it to a List.
+    # This line of code creates a Dictionary from the data and appends it to a List.
     for date, prcp in precipitationDataListOfSQLAlchemyEngineRowObject:
         
         precipitationDictionary \
@@ -363,7 +366,7 @@ def precipitation():
                 (precipitationDictionary)
 
         
-    # This line of code returns the JSON representation of the dictionary.
+    # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
             (precipitationListOfDictionaries)
@@ -379,7 +382,7 @@ def precipitation():
  #  Flask API Route Description:
  #      This function is a Flask API route that occurs when the user arrives 
  #      at the stations URL, '/api/v1.0/stations'; the route returns to the 
- #      caller the JSON representation of a list of stations.
+ #      caller the JSON representation of a List of stations.
  #
  #  Function Parameters:
  #
@@ -401,7 +404,7 @@ def stations():
         = Session \
             (engineSQLAlchemyEngineObject)
     
-    # This line of code performs a query to retrieve a list of stations.
+    # This line of code performs a query to retrieve a List of stations.
     stationListOfSQLAlchemyEngineRowObject \
         = sessionSQLAlchemySessionObject \
             .query \
@@ -438,9 +441,9 @@ def stations():
  #
  #  Flask API Route Description:
  #      This function is a Flask API route that occurs when the user arrives 
- #      at the tobs URL, '/api/v1.0/tobs'; the route converts the query results 
- #      of the dates and temperature observations of the most active station for 
- #      the previous year to a dictionary and returns the JSON representation 
+ #      at the tobs URL, '/api/v1.0/tobs'; the route converts the query result 
+ #      with the dates and temperature observations of the most active station
+ #      for the previous year to a Dictionary and returns the JSON representation 
  #      to the caller.
  #
  #  Function Parameters:
@@ -479,9 +482,11 @@ def tobs():
                  measurementDeclarativeMetaObject \
                     .prcp) \
                     .filter \
-                        (measurementDeclarativeMetaObject.date >= ReturnDateOneYearPriorAsString()) \
+                        (measurementDeclarativeMetaObject.date \
+                             >= ReturnDateOneYearPriorAsString()) \
                     .filter \
-                        (measurementDeclarativeMetaObject.station == ReturnMostActiveStationIDAsString()) \
+                        (measurementDeclarativeMetaObject.station \
+                             == ReturnMostActiveStationIDAsString()) \
                             .order_by \
                                 (measurementDeclarativeMetaObject \
                                     .date) \
@@ -491,7 +496,8 @@ def tobs():
         .close()
 
     
-    # This line of code creates a dictionary from the data and appends it to a List.
+    # This line of code creates a Dictionary from the data and appends it 
+    # to a List.
     for date, tobs, prcp in tobsListOfSQLAlchemyEngineRowObject:
         
         tobsDictionary \
@@ -514,7 +520,7 @@ def tobs():
                 (tobsDictionary)
 
         
-    # This line of code returns the JSON representation of the dictionary.
+    # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
             (tobsActiveStationListofDictionaries)
@@ -529,16 +535,16 @@ def tobs():
  #
  #  Flask API Route Description:
  #      This function is a Flask API route that occurs when the user arrives 
- #      at the start URL, '/api/v1.0/<start_date>'; the route returns to the
- #      caller a JSON list of the minimum, maximum, and average temperatures 
- #      for a specified start date.
+ #      at the start URL, '/api/v1.0/<start_date>'; the route returns a JSON 
+ #      List of the minimum, maximum, and average temperatures for a specified 
+ #      start date.
  #
  #  Function Parameters:
  #
  #  Type    Name            Description
  #  -----   -------------   ----------------------------------------------
  #  String
- #          startDateStringParameter
+ #          startDateString
  #                          This input parameter is the start date of the query.
  #
  #
@@ -550,7 +556,7 @@ def tobs():
 
 @appFlaskAppObject.route('/api/v1.0/<start_date>')
 def start_route \
-        (startDateStringParameter):
+        (startDateString):
    
     temperaturesListOfDictionaries \
         = []
@@ -578,14 +584,15 @@ def start_route \
                         (measurementDeclarativeMetaObject \
                             .tobs)) \
                     .filter \
-                        (measurementDeclarativeMetaObject.date >= startDateStringParameter) \
+                        (measurementDeclarativeMetaObject.date >= startDateString) \
                 .all()
 
     sessionSQLAlchemySessionObject \
         .close()
 
     
-    # This line of code creates a dictionary from the data and appends it to a List.
+    # This line of code creates a Dictionary from the data and appends it 
+    # to a List.
     for minTemp, maxTemp, avgTemp in temperaturesListOfSQLAlchemyEngineRowObject:
         
         temperaturesDictionary \
@@ -608,7 +615,7 @@ def start_route \
                 (tobsDictionary)
 
         
-    # This line of code returns the JSON representation of the dictionary.
+    # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
             (temperaturesListOfDictionaries)
@@ -623,8 +630,8 @@ def start_route \
  #
  #  Flask API Route Description:
  #      This function is a Flask API route that occurs when the user arrives 
- #      at the start URL, '/api/v1.0/<start_date>'; the route returns to the
- #      caller a JSON list of the minimum, maximum, and average temperatures 
+ #      at the start/end URL, ''/api/v1.0/<start_date>/<end_date>''; the route 
+ #      returns a JSON list of the minimum, maximum, and average temperatures 
  #      for a specified date range.
  #
  #  Function Parameters:
@@ -632,10 +639,10 @@ def start_route \
  #  Type    Name            Description
  #  -----   -------------   ----------------------------------------------
  #  String
- #          startDateStringParameter
+ #          startDateString
  #                          This input parameter is the start date of the query.
  #  String
- #          endDateStringParameter
+ #          endDateString
  #                          This input parameter is the end date of the query.
  #
  #
@@ -647,8 +654,8 @@ def start_route \
 
 @appFlaskAppObject.route('/api/v1.0/<start_date>/<end_date>')
 def start_end_route \
-        (startDateStringParameter, 
-         endDateStringParameter):
+        (startDateString, 
+         endDateString):
     
     temperaturesListOfDictionaries \
         = []
@@ -676,16 +683,19 @@ def start_end_route \
                         (measurementDeclarativeMetaObject \
                             .tobs)) \
                     .filter \
-                        (measurementDeclarativeMetaObject.date >= startDateStringParameter) \
+                        (measurementDeclarativeMetaObject.date \
+                             >= startDateString) \
                     .filter \
-                        (measurementDeclarativeMetaObject.date <= endDateStringParameter) \
+                        (measurementDeclarativeMetaObject.date \
+                             <= endDateString) \
                 .all()
 
     sessionSQLAlchemySessionObject \
         .close()
 
     
-    # This line of code creates a dictionary from the data and appends it to a List.
+    # This line of code creates a dictionary from the data and appends it 
+    # to a List.
     for minTemp, maxTemp, avgTemp in temperaturesListOfSQLAlchemyEngineRowObject:
         
         temperaturesDictionary \
@@ -708,7 +718,7 @@ def start_end_route \
                 (tobsDictionary)
 
         
-    # This line of code returns the JSON representation of the dictionary.
+    # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
             (temperaturesListOfDictionaries)
