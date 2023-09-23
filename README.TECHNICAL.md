@@ -14,7 +14,7 @@ PySubroutines.py
 
 If the computer has Anaconda, Jupyter Notebook, and a recent version of Python, the IPython notebook already has the following dependencies installed: datetime, io, json, matplotlib, numpy, pandas, pathlib, os, pandas, requests, requests_html, scipy.
 
-In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, panel, geoviews, geopy, aspose-words, SQLite, SQLAlchemy, and Flask.
+In addition to those modules, the IPython notebook needs the following to execute: holoviews, hvplot, panel, geoviews, geopy, aspose-words, dataframe-image, SQLite, SQLAlchemy, and Flask.
 
 Here are the requisite Terminal commands for installation of these peripheral modules (in this order) (SQLite is already installed on macOS:
 
@@ -29,6 +29,8 @@ python3 -m pip install geoviews
 python3 -m pip install geopy
 
 python3 -m pip install aspose-words
+
+python3 -m pip install dataframe-image
 
 python3 -m pip install sqlalchemy
 
