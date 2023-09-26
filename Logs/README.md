@@ -1,4 +1,4 @@
-This folder contains the log and debug files for the IPython notebook, ClimatePy.ipynb.
+This folder contains the log and debug files for the IPython notebook, ClimatePy.ipynb: the IPython Notebook generates these files in Debug and Log modes, respectively (see README.TECHNICAL.md).
 
 ----
 
