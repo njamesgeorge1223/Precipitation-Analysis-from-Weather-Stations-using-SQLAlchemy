@@ -1,4 +1,4 @@
-This folder contains the input CSV and SQLite database file for the IPython notebook, ClimatePy.ipynb.
+This folder includes the input CSV and SQLite database file for the IPython notebook, ClimatePy.ipynb.
 
 ----
 
