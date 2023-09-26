@@ -34,7 +34,7 @@ python3 -m pip install Flask
 
 ----
 
-The IPython notebook, ClimatePy.ipynb, and Flask API, ClimateApp.py, use the files in the Resources Folder and will not run without them.  These files must have the following Python scripts in the same folder with them:
+The IPython notebook, ClimatePy.ipynb, and Flask API, ClimateApp.py, use the files in the Resources Folder and will not run without them.  The IPython Notebook and Flask API must have the following Python scripts in the same folder with them:
 
 PyConstants.py
 
