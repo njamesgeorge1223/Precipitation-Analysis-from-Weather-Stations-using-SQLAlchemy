@@ -110,13 +110,115 @@ n/a
 
 |&rarr; [./Images/](./Images/)
 
-  &emsp; |&rarr; [./Images/ClimatePyFigure21PrecipitationvsDateLast12Months.png](./Images/ClimatePyFigure21PrecipitationvsDateLast12Months.png)
+  &emsp; |&rarr; [./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png](./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyFigure22PrecipitationHistogramLast12Months.png](./Images/ClimatePyFigure22PrecipitationHistogramLast12Months.png)
+  &emsp; |&rarr; [./Images/ClimatePyFigure32TemperatureObservationsTOBs2010Histogram.png](./Images/ClimatePyFigure32TemperatureObservationsTOBs2010Histogram.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyFigure31MostActiveStationTemperatureObservationTOBSHistogram.png](./Images/ClimatePyFigure31MostActiveStationTemperatureObservationTOBSHistogram.png)
+  &emsp; |&rarr; [./Images/ClimatePyFigure33TemperatureObservationsTOBs2011Histogram.png](./Images/ClimatePyFigure33TemperatureObservationsTOBs2011Histogram.png)
   
-  &emsp; |&rarr; [./Images/ClimatePyTable21PrecipitationStatisticsLast12Months.png](./Images/ClimatePyTable21PrecipitationStatisticsLast12Months.png)
+  &emsp; |&rarr; [./Images/ClimatePyFigure34TemperatureObservationsTOBs2012Histogram.png](./Images/ClimatePyFigure34TemperatureObservationsTOBs2012Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure35TemperatureObservationsTOBs2013Histogram.png](./Images/ClimatePyFigure35TemperatureObservationsTOBs2013Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure36TemperatureObservationsTOBs2014Histogram.png](./Images/ClimatePyFigure36TemperatureObservationsTOBs2014Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure37TemperatureObservationsTOBs2015Histogram.png](./Images/ClimatePyFigure37TemperatureObservationsTOBs2015Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure38TemperatureObservationsTOBs2016Histogram.png](./Images/ClimatePyFigure38TemperatureObservationsTOBs2016Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure39TemperatureObservationsTOBs20178monthsHistogram.png](./Images/ClimatePyFigure39TemperatureObservationsTOBs20178monthsHistogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure411TotalPrecipitationvsYear.png](./Images/ClimatePyFigure411TotalPrecipitationvsYear.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure421PrecipitationvsTime2010.png](./Images/ClimatePyFigure421PrecipitationvsTime2010.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure422Precipitation2010Histogram.png](./Images/ClimatePyFigure422Precipitation2010Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure431PrecipitationvsTime2011.png](./Images/ClimatePyFigure431PrecipitationvsTime2011.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure432Precipitation2011Histogram.png](./Images/ClimatePyFigure432Precipitation2011Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure441PrecipitationvsTime2012.png](./Images/ClimatePyFigure441PrecipitationvsTime2012.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure442Precipitation2012Histogram.png](./Images/ClimatePyFigure442Precipitation2012Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure451PrecipitationvsTime2013.png](./Images/ClimatePyFigure451PrecipitationvsTime2013.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure452Precipitation2013Histogram.png](./Images/ClimatePyFigure452Precipitation2013Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure461PrecipitationvsTime2014.png](./Images/ClimatePyFigure461PrecipitationvsTime2014.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure462Precipitation2014Histogram.png](./Images/ClimatePyFigure462Precipitation2014Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure471PrecipitationvsTime2015.png](./Images/ClimatePyFigure471PrecipitationvsTime2015.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure472Precipitation2015Histogram.png](./Images/ClimatePyFigure472Precipitation2015Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure481PrecipitationvsTime2016.png](./Images/ClimatePyFigure481PrecipitationvsTime2016.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure482Precipitation2016Histogram.png](./Images/ClimatePyFigure482Precipitation2016Histogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure491PrecipitationvsTime20178Months.png](./Images/ClimatePyFigure491PrecipitationvsTime20178Months.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure492Precipitation20178MonthsHistogram.png](./Images/ClimatePyFigure492Precipitation20178MonthsHistogram.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure3101TemperatureObservationsTOBs20102017Histograms.png](./Images/ClimatePyFigure3101TemperatureObservationsTOBs20102017Histograms.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure3102TemperatureObservationsTOBsDistribution.png](./Images/ClimatePyFigure3102TemperatureObservationsTOBsDistribution.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyFigure4103Precipitation20102017Distribution.png](./Images/ClimatePyFigure4103Precipitation20102017Distribution.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable23MostActiveStationIDsandTOBSByYear.png](./Images/ClimatePyTable23MostActiveStationIDsandTOBSByYear.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable24MinimumMaximumandAverageTemperaturesByYear.png](./Images/ClimatePyTable24MinimumMaximumandAverageTemperaturesByYear.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable32TemperatureObservationsTOBs2010SummaryStatistics.png](./Images/ClimatePyTable32TemperatureObservationsTOBs2010SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable33TemperatureObservationsTOBs2011SummaryStatistics.png](./Images/ClimatePyTable33TemperatureObservationsTOBs2011SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable34TemperatureObservationsTOBs2012SummaryStatistics.png](./Images/ClimatePyTable34TemperatureObservationsTOBs2012SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable35TemperatureObservationsTOBs2013SummaryStatistics.png](./Images/ClimatePyTable35TemperatureObservationsTOBs2013SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable36TemperatureObservationsTOBs2014SummaryStatistics.png](./Images/ClimatePyTable36TemperatureObservationsTOBs2014SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable37TemperatureObservationsTOBs2015SummaryStatistics.png](./Images/ClimatePyTable37TemperatureObservationsTOBs2015SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable38TemperatureObservationsTOBs2016SummaryStatistics.png](./Images/ClimatePyTable38TemperatureObservationsTOBs2016SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable39TemperatureObservationsTOBs20178MonthsSummaryStatistics.png](./Images/ClimatePyTable39TemperatureObservationsTOBs20178MonthsSummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable42Precipitation2010SummaryStatistics.png](./Images/ClimatePyTable42Precipitation2010SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable43Precipitation2011SummaryStatistics.png](./Images/ClimatePyTable43Precipitation2011SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable44Precipitation2012SummaryStatistics.png](./Images/ClimatePyTable44Precipitation2012SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable45Precipitation2013SummaryStatistics.png](./Images/ClimatePyTable45Precipitation2013SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable46Precipitation2014SummaryStatistics.png](./Images/ClimatePyTable46Precipitation2014SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable47Precipitation2015SummaryStatistics.png](./Images/ClimatePyTable47Precipitation2015SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable48Precipitation2016SummaryStatistics.png](./Images/ClimatePyTable48Precipitation2016SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable49Precipitation20178MonthsSummaryStatistics.png](./Images/ClimatePyTable49Precipitation20178MonthsSummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable3101TemperatureObservationsTOBs20102017SummaryStatistics.png](./Images/ClimatePyTable3101TemperatureObservationsTOBs20102017SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable3102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./Images/ClimatePyTable3102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4101PrecipitationvsTime20102017.png](./Images/ClimatePyTable4101PrecipitationvsTime20102017.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png](./Images/ClimatePyTable4101TemperatureObservationsTOBs20102017SummaryStatistics.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4102Precipitation20102017Histograms.png](./Images/ClimatePyTable4102Precipitation20102017Histograms.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png](./Images/ClimatePyTable4102TemperatureObservationsTOBs20102016CorrelationMatrix.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png](./Images/ClimatePyTable4111TotalPrecipitationvsTime20102017.png)
+
+  &emsp; |&rarr; [./Images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png](./Images/ClimatePyTable4112TotalPrecipitation20102017SummaryStatistics.png)
   
   &emsp; |&rarr; [./Images/README.md](./Images/README.md)
 
