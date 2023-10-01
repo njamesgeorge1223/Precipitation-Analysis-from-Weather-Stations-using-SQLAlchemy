@@ -122,21 +122,21 @@ n/a
 
 |&rarr; [./Logs/](./Logs/)
 
-  &emsp; |&rarr; [./Logs/20230922ClimatePyDebug.txt](./Logs/20230922ClimatePyDebug.txt)
+  &emsp; |&rarr; [./Logs/20230930ClimatePyDebug.txt](./Logs/20230930ClimatePyDebug.txt)
 
-  &emsp; |&rarr; [./Logs/20230922ClimatePyLog.txt](./Logs/20230922ClimatePyLog.txt)
+  &emsp; |&rarr; [./Logs/20230930ClimatePyLog.txt](./Logs/20230930ClimatePyLog.txt)
 
   &emsp; |&rarr; [./Logs/README.md](./Logs/README.md)
 
 |&rarr; [./Resources/](./Resources/)
-
-  &emsp; |&rarr; [./Resources/README.md](./Resources/README.md)
 
   &emsp; |&rarr; [./Resources/hawaii_measurements.csv](./Resources/hawaii_measurements.csv)
 
   &emsp; |&rarr; [./Resources/hawaii_stations.csv](./Resources/hawaii_stations.csv)
 
   &emsp; |&rarr; [./Resources/hawaii.sqlite](./Resources/hawaii.sqlite)
+
+  &emsp; |&rarr; [./Resources/README.md](./Resources/README.md)
 
 ----
 
