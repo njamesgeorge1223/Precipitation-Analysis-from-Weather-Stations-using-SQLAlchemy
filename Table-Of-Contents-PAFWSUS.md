@@ -100,7 +100,7 @@
 >> ### **Box Plot**
 >> ### **Summary Statistics**
 >> ### **Correlation Matrix**
-> ## **4.11: Total Precipitation (2010-2017)**
+> ## <br> **4.11: Total Precipitation (2010-2017)**
 >> ### **Calculations**
 >> ### **Display Total Precipitation vs. Year**
 >> ### **Summary Statistics**
