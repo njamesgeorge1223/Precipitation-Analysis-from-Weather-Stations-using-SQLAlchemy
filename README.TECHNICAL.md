@@ -108,6 +108,8 @@ n/a
 
 |&rarr; [./README.md](./README.md)
 
+|&rarr; [./Table-Of-Contents-PAFWSUS.md](./Table-Of-Contents-PAFWSUS.md)
+
 |&rarr; [./Images/](./Images/)
 
   &emsp; |&rarr; [./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png](./Images/ClimatePyFigure24MinimumMaximumandAverageTemperaturesByYear.png)
