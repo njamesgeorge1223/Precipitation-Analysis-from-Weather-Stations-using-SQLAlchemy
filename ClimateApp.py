@@ -65,12 +65,10 @@ engineSQLAlchemyEngineObject \
     = create_engine \
         (CONSTANT_SQL_LITE_DATABASE_FILE)
 
-
 # This line of code sets up an existing database schema for reflection 
 # into a new model.
 baseSQLAlchemyDeclarativeMetaObject \
     = automap_base()
-
 
 # This line of code reflects the database tables.
 baseSQLAlchemyDeclarativeMetaObject \
@@ -78,7 +76,6 @@ baseSQLAlchemyDeclarativeMetaObject \
         (engineSQLAlchemyEngineObject, 
          reflect \
              = True)
-
 
 # These lines of code save the references to the station and measurement 
 # tables.
@@ -91,7 +88,6 @@ measurementDeclarativeMetaObject \
     = baseSQLAlchemyDeclarativeMetaObject \
         .classes \
             .measurement
-
 
 # Each function correctly creates and binds the session 
 # between the python app and database (see below).
@@ -221,17 +217,13 @@ def ReturnDateOneYearPriorAsString():
         sessionSQLAlchemySessionObject \
             .close()
         
-        
-        
         mostRecentDateStringVariable \
             = mostRecentDatesSQLAlchemyEngineRowObject[0]
-        
         
         return \
             function \
                 .ReturnDateFromOneYearPriorAsString \
                     (mostRecentDateStringVariable)
-        
     except:
         
         return \
@@ -269,6 +261,7 @@ def ReturnDateOneYearPriorAsString():
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/')
+
 def all_available_routes():
     
     messageStringVariable \
@@ -319,11 +312,11 @@ def all_available_routes():
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/api/v1.0/precipitation')
+
 def precipitation():
 
     precipitationListOfDictionaries \
         = []
-    
     
     sessionSQLAlchemySessionObject \
         = Session \
@@ -346,7 +339,6 @@ def precipitation():
     sessionSQLAlchemySessionObject \
         .close()
 
-
     # This line of code creates a Dictionary from the data and appends it to a List.
     for date, prcp in precipitationDataListOfSQLAlchemyEngineRowObject:
         
@@ -365,7 +357,6 @@ def precipitation():
             .append \
                 (precipitationDictionary)
 
-        
     # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
@@ -398,6 +389,7 @@ def precipitation():
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/api/v1.0/stations')
+
 def stations():
 
     sessionSQLAlchemySessionObject \
@@ -418,7 +410,6 @@ def stations():
     sessionSQLAlchemySessionObject \
         .close()
 
-    
     # This line of code converts the List of SQLAlchemy Row Objects into a normal List.
     stationList \
         = list \
@@ -426,7 +417,6 @@ def stations():
                 .ravel \
                     (stationListOfSQLAlchemyEngineRowObject))
 
-    
     return \
         jsonify \
             (stationList)
@@ -460,11 +450,11 @@ def stations():
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/api/v1.0/tobs')
+
 def tobs():
     
     tobsActiveStationListofDictionaries \
         = []
-    
     
     sessionSQLAlchemySessionObject \
         = Session \
@@ -494,7 +484,6 @@ def tobs():
 
     sessionSQLAlchemySessionObject \
         .close()
-
     
     # This line of code creates a Dictionary from the data and appends it 
     # to a List.
@@ -519,7 +508,6 @@ def tobs():
             .append \
                 (tobsDictionary)
 
-        
     # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
@@ -555,12 +543,12 @@ def tobs():
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/api/v1.0/<start_date>')
+
 def start_route \
         (startDateString):
    
     temperaturesListOfDictionaries \
         = []
-
 
     sessionSQLAlchemySessionObject \
         = Session \
@@ -590,7 +578,6 @@ def start_route \
     sessionSQLAlchemySessionObject \
         .close()
 
-    
     # This line of code creates a Dictionary from the data and appends it 
     # to a List.
     for minTemp, maxTemp, avgTemp in temperaturesListOfSQLAlchemyEngineRowObject:
@@ -614,7 +601,6 @@ def start_route \
             .append \
                 (tobsDictionary)
 
-        
     # This line of code returns the JSON representation of the Dictionary.
     return \
         jsonify \
@@ -653,13 +639,13 @@ def start_route \
  #******************************************************************************************/
 
 @appFlaskAppObject.route('/api/v1.0/<start_date>/<end_date>')
+
 def start_end_route \
         (startDateString, 
          endDateString):
     
     temperaturesListOfDictionaries \
         = []
-
 
     sessionSQLAlchemySessionObject \
         = Session \
@@ -693,7 +679,6 @@ def start_end_route \
     sessionSQLAlchemySessionObject \
         .close()
 
-    
     # This line of code creates a dictionary from the data and appends it 
     # to a List.
     for minTemp, maxTemp, avgTemp in temperaturesListOfSQLAlchemyEngineRowObject:
@@ -716,7 +701,6 @@ def start_end_route \
         temperaturesListOfDictionaries \
             .append \
                 (tobsDictionary)
-
         
     # This line of code returns the JSON representation of the Dictionary.
     return \

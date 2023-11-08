@@ -1,5 +1,5 @@
 
-Timepoint: 09/30/2023 19:23:16
+Timepoint: 11/07/2023 20:07:33
 Program execution begins...
 
 
@@ -13,7 +13,7 @@ Engine(sqlite:///Resources/hawaii.sqlite)
 
 
 
-<sqlalchemy.engine.reflection.Inspector object at 0x153a8b450>
+<sqlalchemy.engine.reflection.Inspector object at 0x1507223d0>
 
 
 
@@ -25,7 +25,7 @@ Engine(sqlite:///Resources/hawaii.sqlite)
 
 
 
-<sqlalchemy.orm.session.Session object at 0x153acb810>
+<sqlalchemy.orm.session.Session object at 0x152078d50>
 
 
 
@@ -71,6 +71,18 @@ Year
 2015   USC00519397   364
 2016   USC00519397   366
 2017*  USC00519397   230
+
+
+
+       Minimum  Maximum  Mean
+2010      58.0     82.0  71.3
+2011      58.0     84.0  74.3
+2012      60.0     82.0  71.2
+2013      58.0     84.0  74.0
+2014      57.0     81.0  70.8
+2015      58.0     84.0  75.3
+2016      61.0     82.0  74.5
+2017*     60.0     87.0  74.9
 
 
 
@@ -381,7 +393,7 @@ date
 2017*          10.66
 
 
-Timepoint: 09/30/2023 19:24:06
+Timepoint: 11/07/2023 20:08:15
 Program execution begins...
 
 
@@ -395,7 +407,7 @@ Engine(sqlite:///Resources/hawaii.sqlite)
 
 
 
-<sqlalchemy.engine.reflection.Inspector object at 0x14a907a90>
+<sqlalchemy.engine.reflection.Inspector object at 0x156105890>
 
 
 
@@ -407,7 +419,7 @@ Engine(sqlite:///Resources/hawaii.sqlite)
 
 
 
-<sqlalchemy.orm.session.Session object at 0x14aa2ab10>
+<sqlalchemy.orm.session.Session object at 0x156131bd0>
 
 
 
@@ -453,6 +465,18 @@ Year
 2015   USC00519397   364
 2016   USC00519397   366
 2017*  USC00519397   230
+
+
+
+       Minimum  Maximum  Mean
+2010      58.0     82.0  71.3
+2011      58.0     84.0  74.3
+2012      60.0     82.0  71.2
+2013      58.0     84.0  74.0
+2014      57.0     81.0  70.8
+2015      58.0     84.0  75.3
+2016      61.0     82.0  74.5
+2017*     60.0     87.0  74.9
 
 
 
